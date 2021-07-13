@@ -12,9 +12,7 @@ header{
     color: white;
     height: 650px;
 }
-.main{
-    background-color: ;
-}
+
 .all-buttons{
     padding: 10px 24px;
     font-size: 16px;
@@ -33,16 +31,23 @@ header{
     font-size: 18px;
 }
 
-.player-img img{
+.player-img img , .img-service img {
     width: 320px;
     height:260px;
-    transition: 0.5s ease-in;
-}
-.player-img img:hover{
-    transform: scale(1.04);
+    transition:0.5s ease-in;
 }
 
+.player-section > h1 , .services-area > h1, .about-area> h1, .contacts-area>h1{
+    font-size: 45px;
+    text-align: center;
+    color: #2D25A0;
+    text-decoration: 5px underline;
+}
 
+.services-area, .about-area, .contacts-area{
+    width: 80%;
+    margin: 100px auto;
+}
 /* ---------Nav Area Starts----------- */
 nav{
     display: flex;
@@ -84,9 +89,7 @@ nav{
     font-size: 64px;
     margin: 0px 33% 27px 0px;
 }
-.top_right{
-    
-}
+
 .top_right img{
     width: 556px;
     height: 438px;
@@ -102,13 +105,7 @@ nav{
     width: 60%;
     margin: 70px auto;
 }
-.player-section > h1{
-    font-size: 45px;
-    text-align: center;
-    color: #2D25A0;
-    text-decoration: 5px underline;
 
-}
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -120,10 +117,16 @@ nav{
 .player{
     background-color: white;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+}
+.player:hover .player-img img {
+    transform: scale(1.04);
+    border-radius: 20px;
 }
 .player-img{
     text-align: center;
     margin-top: 20px;
+    
 }
 .player-header{
     font-size: 28px;
@@ -137,3 +140,104 @@ nav{
     text-align: justify;
 }
 /* ---------Player Area Ends ----------- */
+
+/* ---------Service Area Starts ----------- */
+.services{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.service{
+    margin-left:30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    transition: 0.5s ease-in;
+}
+.service:hover img{
+    transform: scale(1.03);
+    border-radius: 15px;
+}
+.service img{
+    margin: 15px 15px;
+    
+}
+.service h1{
+    padding: 10px 20px;
+}
+.service p{
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: justify;
+}
+.text-service a button{
+    margin-left: 38%;
+}
+/*---------Service Area Ends ----------- */
+
+/*---------About Area Starts ----------- */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    border-radius: 20px;
+}
+.about:hover .about-img img{
+    transform: translateX(20px) translateY(-15px);
+}
+.about-img img{
+    width: 700px;
+    height: 500px;
+    padding: 40px;
+    transition: 0.5s ease-in-out;
+}
+.about-text{
+    font-size: 30px;
+    text-align: justify;
+    padding-right: 70px;
+}
+/*---------About Area Ends ----------- */
+
+/*---------Contacts Area Starts ----------- */
+.contacts-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact input{
+    width: 100%;
+    height: 30px;
+}
+/*---------Contacts Area Ends ----------- */
+
+/*---------Footer Area Starts ----------- */
+footer{
+    padding-bottom:50px;
+}
+.footer-img{
+    margin: 10% 35% 0%;
+}
+.footer-img img{
+    width: 485px;
+    height: 110px;
+}
+.footer-icon{
+    font-size: 35px;
+    text-align: center;
+}
+.footer-icon a{
+    text-decoration: none;
+    color:#969BAB;
+    transition: 1s;
+    padding-right: 10px;
+}
+.footer-icon a:hover{
+    color: black;
+    transform: scale(1.45);
+}
+.footer-span{
+    text-align: center;
+}
+/*---------Footer Area Ends ----------- */
