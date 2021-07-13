@@ -1,0 +1,139 @@
+/* Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Common line starts */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: #2D25A0;
+    color: white;
+    height: 650px;
+}
+.main{
+    background-color: ;
+}
+.all-buttons{
+    padding: 10px 24px;
+    font-size: 16px;
+    background-color:#E02C6D;
+    color: white;
+    border: none;
+    transition: 1s ease-in-out;
+}
+.all-buttons:hover{
+    cursor: pointer;
+    border-radius: 20px;
+    transform: scale(0.95);
+    
+}
+.fas.icon{
+    font-size: 18px;
+}
+
+.player-img img{
+    width: 320px;
+    height:260px;
+    transition: 0.5s ease-in;
+}
+.player-img img:hover{
+    transform: scale(1.04);
+}
+
+
+/* ---------Nav Area Starts----------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 13%;
+    padding-top: 42px;
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+    
+}
+.nav-li{
+    font-size: 16px;
+    padding-right: 36px;
+    transition: 0.5s ease-in;
+}
+.nav-li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in;
+}
+.nav-li:hover, .nav-li:hover a {
+    transform: translateY(-4px);
+    color: rgba(255, 255, 255, 0.356);
+}
+/* ---------Nav Area Ends----------- */
+
+/* ---------Top Area Starts ----------- */
+.top-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15%;
+    padding-top: 67px;
+}
+.top_left h1{
+    font-size: 64px;
+    margin: 0px 33% 27px 0px;
+}
+.top_right{
+    
+}
+.top_right img{
+    width: 556px;
+    height: 438px;
+    transition: 1s ease-in-out;
+}
+.top_right img:hover{
+    transform: translateX(-30px) translateY(-25px);
+}
+/* ---------Top Area Ends ----------- */
+
+/* ---------Player Area Stars ----------- */
+.player-section{
+    width: 60%;
+    margin: 70px auto;
+}
+.player-section > h1{
+    font-size: 45px;
+    text-align: center;
+    color: #2D25A0;
+    text-decoration: 5px underline;
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+    
+}
+.player{
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-img{
+    text-align: center;
+    margin-top: 20px;
+}
+.player-header{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding:0px 20px 0px;
+}
+.player-text{
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: justify;
+}
+/* ---------Player Area Ends ----------- */
